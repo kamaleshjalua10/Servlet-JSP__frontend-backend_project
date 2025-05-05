@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+	height:900px;
+	width:100%;
+	background-image: url("homeim.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 110px;
+    align-items: center;
+}
+img{
+	height:90px;
+	width:90px;
+	border-radius:0%;
+	position:absolute;
+	top:2px;
+	left:670px;
+}
+h5{
+	margin-top:-75px;
+    position: relative;
+    font-size: 6em;
+    color: #222;
+    letter-spacing: 0.1em;
+}
+
+h5::before{
+    content: attr(data-text);
+    position: absolute;
+    color: white;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgb(255, 0, 0);
+    animation: anim 8s linear infinite;
+    filter: drop-shadow(0 0 5px #94f7a5) 
+    drop-shadow(0 0 10px rgb(0, 255, 128));
+}
+
+@keyframes anim{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+span{
+	 color:rgb(145, 145, 145);
+}
+.main_con{
+    height: 680px;
+    width: 89%;
+    border-radius: 28px;
+    box-shadow: 0px 0px 5em rgb(19, 19, 19);
+    background-image: url("homeim.png");
+    background-size: cover;
+    margin-top:7%;
+    box-shadow: 0 0 50px rgb(240, 241, 243);
+    transition: all 2s linear 0s;
+    
+}
+.main_con:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgb(255, 10, 10,1);
+}
+
+.nav_div{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#new_user{
+	height:50px;
+	width:210px;
+	border-radius: 13px;
+	text-align: center;
+	margin-top: 12px;
+	margin-left: 12px;
+	box-shadow: 1px 1px 1px white;
+}
+
+#new_user:hover{
+    background-color:white;
+    box-shadow: 1px 1px 2px rgba(11, 254, 250, 0.906);
+    transform: scale(1.1);
+}
+#password{
+	height:50px;
+	width:250px;
+	border-radius: 13px;
+	text-align:center;
+	margin-top: 12px;
+	margin-right: 12px;
+	box-shadow: 1px 1px 1px white;
+}
+#password:hover{
+    background-color:white;
+    box-shadow: 1px 1px 2px rgb(36, 253, 123);
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 25px;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+}
+
+.form{
+	position:relative;
+	top:70px;
+	left:25%;
+	height:75%;
+	width:600px;
+	background-color:transparent;
+    backdrop-filter: blur(20px);	
+	border-radius:25px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 30px gray;
+	
+}
+.phone,.pass{
+	height:150px;
+	width:400px;
+	display: grid;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align:center;
+}
+label{
+	font-size:37px;
+	color: white;
+	font-family: monospace;
+	text-shadow: 1px 1px 2px black;
+}
+input{
+	height:50px;
+	width:400px;
+	font-size:20px;
+	border-radius:15px;
+	text-align:center;
+	cursor: pointer;
+	outline: none;
+	color:black;
+}
+input:focus{
+    animation: scal 0.4s;
+}
+@keyframes scal{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        border-color: rgb(255, 34, 222);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+button{
+	font-size:18px;
+	height:50px;
+	width:90px;
+	border-radius:20px;
+	background-color:red;
+	position:relative;
+	left:150px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button:focus{
+    animation: scal2 0.4s;
+}
+@keyframes scal2{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        border-color: rgba(5, 255, 251, 0.906);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+

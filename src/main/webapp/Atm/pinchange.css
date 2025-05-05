@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+body{
+	background-color:black;
+    display: grid;
+	justify-content: center;
+    align-items: center;   
+}
+span{
+	position:relative;
+	left:150px;
+	margin-top:20px;
+	font-size:60px;
+	font-family: 'Courier New', Courier, monospace;
+	color:rgb(39, 241, 255);
+	text-shadow:1px 1px 4px red;
+}
+.pinform{
+	height:500px;
+	width:600px;
+	background-color:transparent;
+    backdrop-filter: blur(20px);	
+	border-radius:25px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position:relative;
+	top:110px;
+	box-shadow: 10px 10px rgb(82, 225, 227);
+}
+.oldpin,.newpin{
+	height:150px;
+	width:400px;
+	display: grid;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align:center;
+}
+label{
+	font-size:37px;
+	color: white;
+	font-family: monospace;
+	text-shadow: 1px 1px 3px green;
+}
+input{
+	height:50px;
+	width:400px;
+	font-size:20px;
+	border-radius:15px;
+	text-align:center;
+	cursor: pointer;
+	outline: none;
+	color:black;
+	font-family:Lucida Console;
+	border-color: rgb(14, 255, 30);
+	box-shadow:0px 0px 20px rgb(30, 30, 30);
+}
+input:focus{
+    animation: scal 0.4s;
+}
+@keyframes scal{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        border-color: rgb(255, 34, 222);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+button{
+	font-size:18px;
+	height:55px;
+	width:110px;
+	border-radius:20px;
+	background-color:red;
+	position:relative;
+	top:25px;
+	left:150px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	box-shadow:0px 0px 20px white;
+}
+button:focus{
+    animation: scal2 0.4s;
+}
+@keyframes scal2{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        border-color: rgba(5, 255, 251, 0.906);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+body{
+	background-image: url("dedit.jpg");
+    background-size: cover;
+    display: grid;
+	justify-content: center;
+    align-items: center;   
+}
+span{
+	margin-top:20px;
+	font-size:60px;
+	font-family: 'Courier New', Courier, monospace;
+	color:white;
+	text-shadow:1px 1px 2px black;
+}
+.wform{
+	height:500px;
+	width:600px;
+	background-color:transparent;
+    backdrop-filter: blur(20px);	
+	border-radius:25px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position:relative;
+	top:110px;
+	right:10%;
+	box-shadow: 0 0 50px white;
+}
+.amount,.pin{
+	height:150px;
+	width:400px;
+	display: grid;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align:center;
+}
+label{
+	font-size:37px;
+	color: black;
+	font-family: monospace;
+	text-shadow: 1px 1px 2px green;
+}
+input{
+	height:50px;
+	width:400px;
+	font-size:20px;
+	border-radius:15px;
+	text-align:center;
+	cursor: pointer;
+	outline: none;
+	color:black;
+	font-family:Lucida Console;
+	box-shadow:0px 0px 20px rgb(30, 30, 30);
+}
+input:focus{
+    animation: scal 0.4s;
+}
+@keyframes scal{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        border-color: rgb(255, 34, 222);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+button{
+	font-size:18px;
+	height:55px;
+	width:120px;
+	border-radius:20px;
+	background-color:red;
+	position:relative;
+	left:150px;
+	top:17px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	
+}
+button:focus{
+    animation: scal2 0.4s;
+}
+@keyframes scal2{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        border-color: rgba(5, 255, 251, 0.906);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
